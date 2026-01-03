@@ -98,5 +98,5 @@ ani = FuncAnimation(fig, update, frames=360, interval=50, blit=False)
 
 plt.tight_layout()
 # Для сохранения анимации (раскомментируйте при необходимости)
-ani.save('dna_animation.mp4', writer='ffmpeg', fps=30)
+ani.save('dna_animation.gif', writer='ffmpeg', fps=30)
 plt.show()
