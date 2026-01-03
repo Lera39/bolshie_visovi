@@ -19,7 +19,7 @@ sound = np.sin(2 * np.pi * freq * t)
 fig, ax = plt.subplots(figsize=(10, 4))
 
 # Сколько секунд показывать в одном кадре
-window_seconds = 0.1
+window_seconds = 0.05
 # Сколько точек в одном кадре
 window_points = int(window_seconds * fs)
 
@@ -44,7 +44,7 @@ def update(frame_num):
     line.set_ydata(sound[start:end])
     
     # Обновляем заголовок
-    ax.set_title(f'Звуковая волна {freq} Гц (время: {start/fs:.2f} сек)')
+    ax.set_title(f'Звуковая волна {freq} Гц)')
     
     return line,
 
